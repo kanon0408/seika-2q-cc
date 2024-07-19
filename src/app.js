@@ -1,6 +1,6 @@
 import Chart from 'chart.js/auto';
 let ctx = document.getElementById('myChart');
-//一つ目の円グラフ
+//円グラフ
 const data1 = { 
 	labels: [	'課題',
 			'今日の夕飯何にしよう？',
@@ -74,6 +74,31 @@ const data5 = {
 	]
 };
 
+const data6= { 
+	labels: [ 	'課題',
+			'アルバイト疲れる',
+			'早く帰りたい'],
+	datasets: [
+		  {
+		
+		  data: [10,10,100],
+		  borderWidth: 1
+	    }
+	]
+};
+const data7 = { 
+	labels: [ 	'掃除',
+			'土日あっという間',
+			'授業'],
+	datasets: [
+		  {
+		
+		  data: [50,40,50],
+		  borderWidth: 1
+	    }
+	]
+};
+
 let chart;
 function updateChart(data) {
 	if (chart == null) {
@@ -106,6 +131,14 @@ document.getElementById('button-4').onclick = function() {
 
 document.getElementById('button-5').onclick = function() {
 	updateChart(data5);
+}
+
+document.getElementById('button-6').onclick = function() {
+	updateChart(data6);
+}
+
+document.getElementById('button-7').onclick = function() {
+	updateChart(data7);
 }
 // document.getElementById('button-2').onclick = function() {
 // new Chart(ctx, {
@@ -145,4 +178,3 @@ document.getElementById('button-5').onclick = function() {
 // 		},
 		
 // 	});
-

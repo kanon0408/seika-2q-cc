@@ -6,48 +6,105 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
-		.mychart{
-			margin: 0 auto;
+		
+	
+	.profile{
+		background-color: #FFF5F1;
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		justify-content: stretch;
+		margin: 0 auto;
+		padding: 60px 0;
+		text-align: left;
+		
+	}
+	.label{
+		font-size: 16px;
+		margin-top: 80px;
+		text-align: left;
+		font-family: "ab-kokoro-no3", sans-serif;
+	}
+	.h1{
+		font-size: 30px;
+		font-family:  "ab-kokoro-no3", sans-serif;
+	}
+	.message-Box{
+		width: 100%;
+		height: 140px;
+		border: 1px solid#D9D9D9;
+		border-radius: 10px; 
+		margin-top: 5px;
+	}
+	.mychart{
+		margin: 0 auto;
 			
 			
+	}
+
+	
+
+	
+	.chart{
+		height:400px;
+		width:400px;
+		margin: 0 auto;
+		padding-bottom: 50px;
+	}
+
+	.button{
+		margin-top: 20px;
+		width: 500px;
+		
 		}
 
-		.h2{
-			font-size: 30px;
-		}
-		.chart{
-			height:400px;
-			width:400px;
-			margin: 0 auto;
-		}
-		.button{
-			margin-top: 20px;
-			width: 500px;
-		}
+	.submit{
+		
+		width: 200px;
+		height:50px;
+		font-size: 20px;
+		border: 1px solid#D9D9D9;
+		border-radius: 20px; 
+		background-color: rgb(255, 255, 255);
+		margin-top: 100px;
+		margin-left: 350px;
+	}
 		
 
 	</style>
 </head>
 <body>
-	
-	<div class = "mychart">
-		<h2>私の1日の頭の中</h2>
-			<div class="chart">
-				<canvas id="myChart"></canvas>
-				<div class = "button">
-					<button id="button-1">月曜日</button>
-					<button id="button-2">火曜日</button>
-					<button id="button-3">水曜日</button>
-					<button id="button-4">木曜日</button>
-					<button id="button-5">金曜日</button>
-					<button id="button-6">土曜日</button>
-					<button id="button-7">日曜日</button>
-				</div>
-			</div>
+	<div class="profile">
+		<h1>私のプロフィール</h1>
 		
+		<div class = "mychart">
+			<label>私の1日の頭の中（一週間編）</label>
 
+				<div class="chart">
+					<canvas id="myChart"></canvas>
+					<div class = "button">
+						<button id="button-1">月曜日</button>
+						<button id="button-2">火曜日</button>
+						<button id="button-3">水曜日</button>
+						<button id="button-4">木曜日</button>
+						<button id="button-5">金曜日</button>
+						<button id="button-6">土曜日</button>
+						<button id="button-7">日曜日</button>
+					</div>
+				</div>
+				
+				<label for="message">私に質問</label>
+				<textarea class = "message-Box"></textarea>
+			
+				<button class= "submit" id="submit" type="submit">送信</button>
+		</div>
 	</div>
+		
+	
 	<script src="app.js">
+	
+	
+	
 		
 	</script>
 </body>
