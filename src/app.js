@@ -178,3 +178,7 @@ document.getElementById('button-7').onclick = function() {
 // 		},
 		
 // 	});
+
+// if (!alert.hidden) {
+// 	alert.scrollIntoView({behavior:"smooth"});
+// }

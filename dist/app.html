@@ -27,18 +27,67 @@
 		margin: 0 auto;
 		padding: 60px 0;
 		text-align: left;
+		display: flex;
 		
 	}
-	.label{
+	.head{
 		font-size: 16px;
-		margin-top: 80px;
+		margin-top: 100px;
 		text-align: left;
-		font-family: "ab-kokoro-no3", sans-serif;
+		margin-top: 50px;
+		color: black;
+		
 	}
-	.h1{
+	.tama{
 		font-size: 30px;
 		font-family:  "ab-kokoro-no3", sans-serif;
+		margin: 0 auto;
 	}
+	.naka{
+		display: flex;
+		
+	}
+	.prof{
+		background-color: #FBDBDB;
+		text-align: left;
+		margin: 0 auto;
+		width: 500px;
+		height: 200px;
+		margin-top: 40px;
+		padding-left: 50px;	
+		display: flex;	 
+		border-radius: 20px;
+		display: inline-block;
+		padding-top: 10px;
+
+	}
+	
+	label{
+		
+		
+		font-weight: bold;
+		color:white ;
+	 	font-size: 25px; 
+			
+	}
+	
+	span{
+		
+		margin-left: 30px;
+		font-size: 20px;
+		
+	}
+	.img{
+		
+	}
+	.name{
+		background-color: #FBDBDB;
+		width: 200px;
+		height: 50px;
+		margin-right: 100px;
+		
+	}
+	
 	.message-Box{
 		width: 100%;
 		height: 140px;
@@ -46,8 +95,13 @@
 		border-radius: 10px; 
 		margin-top: 5px;
 	}
+	.message{
+		color: black;
+		font-size: 20px;
+	}
 	.mychart{
 		margin: 0 auto;
+		margin-top: 60px;
 			
 			
 	}
@@ -75,9 +129,9 @@
 		font-size: 20px;
 		border: 1px solid#D9D9D9;
 		border-radius: 20px; 
-		background-color: rgb(255, 255, 255);
+		background-color: #FBDBDB;
 		margin-top: 100px;
-		margin-left: 350px;
+		margin-left: 250px;
 	}
 		
 
@@ -85,10 +139,44 @@
 </head>
 <body>
 	<div class="profile">
-		<h1>私のプロフィール</h1>
+		<div class="tama">私のプロフィール</div>
+	
+			<div class="prof">
+				<div class = "my">
+					
+					<div>
+						<label>私の名前 </label>
+							<span>佐々木華音</span>
+							
+						
+					</div>
+				
+					<div>
+						<label>誕生日</label>
+							<span>４月８日</span>
+						
+					</div>
+					<div>
+						<label>血液型</label>
+							<span>AB型</span>
+						
+					</div>
+					<div>
+						<label>特技</label>
+							<span>バルーンアートを作ること</span>
+						
+					</div>
+					<div>
+						<label>趣味</label>
+							<span>絵を描くこと</span>
+						
+					</div>
+				</div>
+				
+		</div>
 		
 		<div class = "mychart">
-			<label>私の1日の頭の中（一週間編）</label>
+			<label class ="head">私の1日の頭の中（一週間編）</label>
 
 				<div class="chart">
 					<canvas id="myChart"></canvas>
@@ -102,11 +190,12 @@
 						<button id="button-7">日曜日</button>
 					</div>
 				</div>
+				<form onsubmit="onSubmit(event)">
+					<label class="message">質問</label>
+					<textarea class = "message-Box"></textarea>
 				
-				<label for="message">私に質問</label>
-				<textarea class = "message-Box"></textarea>
-			
-				<button class= "submit" id="submit" type="submit">送信</button>
+					<button class= "submit" id="submit" type="submit">送信</button>
+				</form>
 		</div>
 	</div>
 		
