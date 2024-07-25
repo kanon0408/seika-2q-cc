@@ -140,6 +140,8 @@ document.getElementById('button-6').onclick = function() {
 document.getElementById('button-7').onclick = function() {
 	updateChart(data7);
 }
+
+
 // document.getElementById('button-2').onclick = function() {
 // new Chart(ctx, {
 // 	type: 'pie',
